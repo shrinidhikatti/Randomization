@@ -3,6 +3,7 @@ import { ShieldCheck, Download } from 'lucide-react'
 import UploadStep from './components/UploadStep'
 import ConfigStep from './components/ConfigStep'
 import ResultStep from './components/ResultStep'
+import Footer from './components/Footer'
 import { runRandomSelection } from './utils/randomSelector'
 import { downloadResultsExcel } from './utils/excelExporter'
 import { downloadResultsPDF } from './utils/pdfExporter'
@@ -88,7 +89,7 @@ export default function App() {
       <header className="bg-navy text-white shadow-lg">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-serif leading-tight">RandomSelect</h1>
+            <h1 className="text-xl font-serif leading-tight">Randomization</h1>
             <p className="text-xs text-white/60 mt-0.5">Beneficiary Selection Tool</p>
           </div>
           <div className="flex items-center gap-3">
@@ -184,6 +185,7 @@ export default function App() {
           Your file is processed locally. No data is uploaded to any server.
         </p>
       </main>
+      <Footer />
     </div>
   )
 }

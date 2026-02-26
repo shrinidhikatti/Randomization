@@ -21,7 +21,7 @@ export function downloadResultsPDF({ selected, remaining, headers, schemeName, c
   doc.setTextColor(255, 255, 255)
   doc.setFontSize(22)
   doc.setFont('helvetica', 'bold')
-  doc.text('RandomSelect', 14, 16)
+  doc.text('Randomization', 14, 16)
 
   doc.setFontSize(11)
   doc.setFont('helvetica', 'normal')
@@ -107,12 +107,12 @@ export function downloadResultsPDF({ selected, remaining, headers, schemeName, c
     doc.setPage(p)
     doc.setFontSize(8)
     doc.setTextColor(160, 170, 185)
-    doc.text(`RandomSelect  •  ${scheme}  •  Page ${p} of ${pageCount}`, 148, 205, { align: 'center' })
+    doc.text(`Randomization  •  ${scheme}  •  Page ${p} of ${pageCount}`, 148, 205, { align: 'center' })
   }
 
   const safeName = scheme.replace(/[^a-zA-Z0-9_\- ]/g, '').trim().replace(/\s+/g, '_')
   const dateTag = now.toISOString().slice(0, 10)
-  doc.save(`RandomSelection_${safeName}_${dateTag}.pdf`)
+  doc.save(`Randomization_${safeName}_${dateTag}.pdf`)
 }
 
 function addTablePage(doc, { title, subtitle, headers, rows, headerColor, navyColor }) {

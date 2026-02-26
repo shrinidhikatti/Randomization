@@ -4,3 +4,4 @@ dist/
 *.local
 public/icon-192.svg
 public/icon-512.svg
+.vercel

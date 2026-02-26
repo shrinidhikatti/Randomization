@@ -27,7 +27,7 @@ export function downloadResultsExcel({ selected, remaining, headers, schemeName,
   const timeStr = now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
 
   const summaryData = [
-    ['RandomSelect — Beneficiary Selector'],
+    ['Randomization — Beneficiary Selector'],
     [],
     ['Scheme Name', schemeName || '(Not specified)'],
     ['Date of Selection', dateStr],
@@ -47,7 +47,7 @@ export function downloadResultsExcel({ selected, remaining, headers, schemeName,
   // ── Trigger download ───────────────────────────────────────────────────────
   const safeName = (schemeName || 'Selection').replace(/[^a-zA-Z0-9_\- ]/g, '').trim().replace(/\s+/g, '_')
   const dateTag = now.toISOString().slice(0, 10)
-  const filename = `RandomSelection_${safeName}_${dateTag}.xlsx`
+  const filename = `Randomization_${safeName}_${dateTag}.xlsx`
 
   XLSX.writeFile(wb, filename)
 }

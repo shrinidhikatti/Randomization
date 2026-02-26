@@ -9,8 +9,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon-192.png', 'icon-512.png'],
       manifest: {
-        name: 'RandomSelect — Beneficiary Selector',
-        short_name: 'RandomSelect',
+        name: 'Randomization — Beneficiary Selector',
+        short_name: 'Randomization',
         description: 'Government-grade random beneficiary selection tool',
         start_url: '/',
         display: 'standalone',
