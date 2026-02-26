@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+public/icon-192.svg
+public/icon-512.svg
