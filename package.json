@@ -26,7 +26,7 @@
     "files": [
       "dist/**/*",
       "electron/main.cjs",
-      "public/icon-512.png",
+      "public/icon.ico",
       "public/icon-192.png"
     ],
     "win": {
@@ -38,21 +38,21 @@
           ]
         }
       ],
-      "icon": "public/icon-512.png"
+      "icon": "public/icon.ico"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "installerIcon": "public/icon-512.png",
-      "uninstallerIcon": "public/icon-512.png",
-      "installerHeaderIcon": "public/icon-512.png",
+      "installerIcon": "public/icon.ico",
+      "uninstallerIcon": "public/icon.ico",
+      "installerHeaderIcon": "public/icon.ico",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "Randomization"
     },
     "mac": {
       "target": "dmg",
-      "icon": "public/icon-512.png",
+      "icon": "public/icon.ico",
       "category": "public.app-category.productivity"
     }
   },
