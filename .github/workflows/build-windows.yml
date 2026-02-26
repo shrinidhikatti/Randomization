@@ -22,8 +22,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build Vite app
+        run: npm run build
+
       - name: Build Windows installer
-        run: npm run electron:build:win
+        run: npx electron-builder --win --x64
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Windows installer
         uses: actions/upload-artifact@v4

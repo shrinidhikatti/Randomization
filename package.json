@@ -1,6 +1,8 @@
 {
   "name": "randomization",
   "productName": "Randomization",
+  "description": "Government-grade random beneficiary selection tool",
+  "author": "Shrinidhi Katti <shrinidhikatti@gmail.com>",
   "private": true,
   "version": "1.0.0",
   "type": "module",
